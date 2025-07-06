@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className="min-h-screen flex flex-col bg-neutral-50">
       <Header />
-      <main className="flex-grow py-4">
+      <main className="grow py-4">
         <div className="container px-4 mx-auto">
           <h1 className="text-3xl font-bold text-primary-600 mb-6">Welcome to React with Tailwind CSS v4</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">

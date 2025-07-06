@@ -1,0 +1,34 @@
+{
+  "app": {
+    "name": "React Starter",
+    "copyright": "© {{year}} React Starter. All rights reserved."
+  },
+  "welcome": "Welcome to React Starter",
+  "description": "A minimal and flexible React.js starter template",
+  "navigation": {
+    "home": "Home",
+    "about": "About"
+  },
+  "language": "Language",
+  "loading": {
+    "message": "Loading...",
+    "home": "Loading home content...",
+    "about": "Loading about page..."
+  },
+  "home": {
+    "features": "Features"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "defaultMessage": "An unexpected error occurred. Please try again.",
+    "unexpectedTitle": "Unexpected Error",
+    "contactSupport": "If the problem persists, please contact support.",
+    "backToHome": "Go to Homepage",
+    "reload": "Reload Page"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "message": "Sorry, we couldn't find the page you're looking for.",
+    "backToHome": "Go back home"
+  }
+}

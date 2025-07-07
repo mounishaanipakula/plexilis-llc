@@ -1,28 +1,26 @@
-# React Starter Template
+# Plexilis LLC
 
-A modern, production-ready React starter template with TypeScript, Vite, and best practices.
+Official website for Plexilis LLC built with modern web technologies.
 
 [![React](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0.2-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-4.4.5-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.3.3-06B6D4?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![i18next](https://img.shields.io/badge/i18next-23.2.11-26A69A?logo=i18next&logoColor=white)](https://www.i18next.com/)
 
-## ✨ Features
+## 🏢 About Plexilis LLC
 
-- ⚡ **Blazing Fast** with Vite
-- 🎨 **Modern UI** with Tailwind CSS
-- 🌍 **i18n** with built-in language detection (English, Spanish, French)
-- 🛣️ **Routing** with React Router v6
-- 🛡️ **Error Boundaries** with graceful fallback UI
-- 🔄 **Loading States** with smooth transitions
-- 📱 **Fully Responsive** design
-- 🧩 **Modular Architecture**
-- 🛠 **Developer Experience**
-  - TypeScript support
-  - ESLint + Prettier
-  - Path aliases
-  - Environment variables support
+Plexilis LLC is a forward-thinking company dedicated to delivering innovative solutions and exceptional services to our clients. Our website showcases our portfolio, services, and company values.
+
+## ✨ Website Features
+
+- ⚡ **Blazing Fast** performance with Vite
+- 🎨 **Modern UI** built with Tailwind CSS
+- 📱 **Fully Responsive** design for all devices
+- 🛠 **Developer Friendly**
+  - TypeScript for type safety
+  - Code quality with ESLint + Prettier
+  - Organized project structure
+  - Environment-based configuration
 
 ## 🚀 Getting Started
 
@@ -34,8 +32,8 @@ A modern, production-ready React starter template with TypeScript, Vite, and bes
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/react-starter.git
-   cd react-starter
+   git clone https://github.com/plexilis-llc/website.git
+   cd website
    ```
 
 2. Install dependencies:
@@ -47,9 +45,10 @@ A modern, production-ready React starter template with TypeScript, Vite, and bes
    pnpm install
    ```
 
-3. Copy the environment file and update the values if needed:
+3. Configure environment variables:
    ```bash
    cp .env.example .env
+   # Update the .env file with your configuration
    ```
 
 4. Start the development server:
@@ -61,7 +60,7 @@ A modern, production-ready React starter template with TypeScript, Vite, and bes
    pnpm dev
    ```
 
-5. Open [http://localhost:5173](http://localhost:5173) in your browser.
+5. Open [http://localhost:5173](http://localhost:5173) in your browser to view the website.
 
 ## 📁 Project Structure
 
@@ -89,14 +88,13 @@ src/
 └── main.tsx              # Application entry point
 ```
 
-## 🌍 Internationalization (i18n)
+## 📞 Contact Us
 
-The template includes i18next with the following features:
-- Language detection (browser language, local storage)
-- Support for English (en), Spanish (es), and French (fr)
-- Easy to add more languages
+For business inquiries or more information about our services, please contact us at:
 
-### Adding a New Language
+- **Email**: info@plexilisllc.com
+- **Phone**: (555) 123-4567
+- **Address**: 123 Business Ave, Suite 100, City, State 12345
 
 1. Create a new folder in `src/locales/` with the language code (e.g., `de` for German)
 2. Add a `translation.json` file with the translations
@@ -138,11 +136,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Made with ❤️ by [Your Name]
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
+© 2025 Plexilis LLC. All rights reserved.
       ...tseslint.configs.strictTypeChecked,
       // Optionally, add this for stylistic rules
       ...tseslint.configs.stylisticTypeChecked,

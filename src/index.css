@@ -4,23 +4,23 @@
 @theme {
   
   /* Color Theme */
-  --color-white: 255 255 255;
-  --color-primary: 0 5 77; /* #00054D */
-  --color-primary-hover: 47 199 161; /* #2FC7A1 */
-  --color-secondary: 47 199 161; /* #2FC7A1 */
-  --color-secondary-hover: 0 5 77; /* #00054D */
+  --color-white: rgb(255 255 255);
+  --color-primary: rgb(0 5 77); /* #00054D */
+  --color-primary-hover: rgb(47 199 161); /* #2FC7A1 */
+  --color-secondary: rgb(47 199 161); /* #2FC7A1 */
+  --color-secondary-hover: rgb(0 5 77); /* #00054D */
   
   /* Neutral colors */
-  --color-neutral-50: 249 250 251;
-  --color-neutral-100: 243 244 246;
-  --color-neutral-200: 229 231 235;
-  --color-neutral-300: 209 213 219;
-  --color-neutral-400: 156 163 175;
-  --color-neutral-500: 107 114 128;
-  --color-neutral-600: 75 85 99;
-  --color-neutral-700: 55 65 81;
-  --color-neutral-800: 31 41 55;
-  --color-neutral-900: 17 24 39;
+  --color-neutral-50: rgb(249 250 251);
+  --color-neutral-100: rgb(243 244 246);
+  --color-neutral-200: rgb(229 231 235);
+  --color-neutral-300: rgb(209 213 219);
+  --color-neutral-400: rgb(156 163 175);
+  --color-neutral-500: rgb(107 114 128);
+  --color-neutral-600: rgb(75 85 99);
+  --color-neutral-700: rgb(55 65 81);
+  --color-neutral-800: rgb(31 41 55);
+  --color-neutral-900: rgb(17 24 39);
 
   /* Container */
   --container-padding: 1rem;

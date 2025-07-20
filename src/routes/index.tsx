@@ -15,15 +15,16 @@ const lazyLoad = (componentImport: any) =>
 
 // Import pages
 import Home from '../pages/Home';
+import About from '../pages/About';
+import Products from '../pages/Products';
+import ITSolutions from '../pages/ITSolutions';
+import Contact from '../pages/Contact';
 
 // Lazy load other pages
 const OurCompany = lazyLoad(Promise.resolve({ default: () => <PageLayout title="Our Company" /> }));
-const Products = lazyLoad(Promise.resolve({ default: () => <PageLayout title="Products" /> }));
-const ITSolutions = lazyLoad(Promise.resolve({ default: () => <PageLayout title="IT Solutions" /> }));
 const TechAdvisory = lazyLoad(Promise.resolve({ default: () => <PageLayout title="Tech Advisory" /> }));
 const Careers = lazyLoad(Promise.resolve({ default: () => <PageLayout title="Careers" /> }));
 const Blog = lazyLoad(Promise.resolve({ default: () => <PageLayout title="Blog" /> }));
-const Contact = lazyLoad(Promise.resolve({ default: () => <PageLayout title="Contact Us" /> }));
 const NotFound = lazyLoad(Promise.resolve({ default: () => <PageLayout title="Page Not Found" /> }));
 
 // Create the router configuration
@@ -45,7 +46,7 @@ const router = createBrowserRouter([
         path: 'our-company', 
         element: (
           <Suspense fallback={<LoadingSpinner />}>
-            <OurCompany />
+            <About />
           </Suspense>
         ) 
       },

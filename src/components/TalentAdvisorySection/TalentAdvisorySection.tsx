@@ -5,7 +5,7 @@ const TalentAdvisorySection = () => {
     <>
       {/* Talent Advisory Section */}
       <section className="py-16 md:py-24 bg-neutral-50">
-        <div className="container px-4 mx-auto">
+        <div className="px-4 mx-auto">
           <div className="mb-24">
             {/* Header */}
             <div className="text-center mb-16">

@@ -8,7 +8,7 @@ const KeyBenefits = () => {
           <div className="w-full h-full bg-gradient-to-br from-secondary/20 to-transparent"></div>
         </div>
         
-        <div className="container px-4 mx-auto relative z-10">
+        <div className="px-4 mx-auto relative z-10">
           <div className="text-center text-white">
             <p className="text-secondary font-medium text-lg mb-6">Ready To Transform Your Business?</p>
             <h2 className="text-3xl md:text-4xl font-bold mb-8 max-w-4xl mx-auto leading-tight">
@@ -27,7 +27,7 @@ const KeyBenefits = () => {
 
       {/* Key Benefits Section */}
       <section className="py-16 md:py-24 bg-white">
-        <div className="container px-4 mx-auto">
+        <div className="px-4 mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">

@@ -49,7 +49,7 @@ const Header = () => {
         scrolled ? 'bg-white/95 shadow-md backdrop-blur-sm' : 'bg-white'
       }`}
     >
-      <div className="container mx-auto px-4 h-full">
+      <div className="mx-auto px-6 md:px-8 lg:px-12 h-full">
         <div className="flex items-center justify-between h-full">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0 h-full flex items-center">

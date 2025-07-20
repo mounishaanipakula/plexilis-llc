@@ -264,7 +264,7 @@ const ITSolutionsTabs = () => {
 
   return (
     <section className="py-16 md:py-24 bg-white">
-      <div className="container px-4 mx-auto">
+      <div className="px-4 mx-auto">
         {/* Tab Navigation */}
         <div className="flex flex-wrap justify-center gap-2 mb-16">
           {tabs.map((tab) => (

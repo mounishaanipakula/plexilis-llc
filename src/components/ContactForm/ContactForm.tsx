@@ -24,7 +24,7 @@ const ContactForm = () => {
 
   return (
     <section className="py-16 md:py-20 bg-white">
-      <div className="container px-4 mx-auto">
+      <div className="px-4 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto">
           {/* Left Side - Contact Form */}
           <div className="bg-neutral-50 rounded-xl p-6 md:p-8 lg:p-10">

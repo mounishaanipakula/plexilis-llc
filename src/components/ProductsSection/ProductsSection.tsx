@@ -3,7 +3,7 @@ import ReadMoreButton from '../ui/ReadMoreButton';
 const ProductsSection = () => {
   return (
     <section className="py-16 md:py-24">
-      <div className="container px-4 mx-auto">
+      <div className="px-4 mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
@@ -21,7 +21,7 @@ const ProductsSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Images */}
           <div className="space-y-6">
-            <div className="flex flex-row justify-end items-end space-x-4">
+            <div className="flex flex-row justify-center items-end space-x-4 mx-auto">
               <div className="w-28 sm:w-32 md:w-36 lg:w-40 rounded-[2rem] overflow-hidden flex-shrink-0">
                 <img 
                   src="/src/assets/images/product-image-1.png" 
@@ -106,8 +106,8 @@ const ProductsSection = () => {
 
         {/* Content Grid - System Analyzers (Flipped Layout) */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-24 mb-24">
-          {/* Left Side - Content */}
-          <div className="space-y-8 lg:order-1 order-2">
+          {/* Right Side - Content */}
+          <div className="space-y-8 lg:order-2 order-2">
             {/* System Analyzers */}
             <div>
               <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
@@ -164,9 +164,9 @@ const ProductsSection = () => {
             </div>
           </div>
 
-          {/* Right Side - Image */}
-          <div className="lg:order-2 order-1">
-            <div className="relative w-full max-w-md mx-auto lg:mx-0">
+          {/* Left Side - Image */}
+          <div className="lg:order-1 order-1">
+            <div className="relative w-full max-w-md mx-auto">
               <div className="rounded-[2rem] overflow-hidden bg-gradient-to-br from-neutral-800 to-neutral-900 h-80 w-80 mx-auto">
                 <img 
                   src="/src/assets/images/system-analyzers.png" 

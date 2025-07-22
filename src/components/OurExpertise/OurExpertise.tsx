@@ -7,7 +7,7 @@ const OurExpertise = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             Our <span className="text-secondary">Expertise</span>
           </h2>
-          <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
+          <div className="w-48 h-0.5 bg-secondary mx-auto mb-8"></div>
           <p className="text-neutral-600 text-lg max-w-4xl mx-auto leading-relaxed">
             With our deep expertise and experienced Team, we have created Road Maps, Build Solutions and Delivered Value 
             across Organizations. Here is the list of tools we have acquired and equipped with...

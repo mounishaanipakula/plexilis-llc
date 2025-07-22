@@ -20,27 +20,13 @@ const TalentAdvisorySection = () => {
 
           {/* Content Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Side - Images */}
-            <div className="relative h-96 flex justify-center items-center">
-              {/* Main large image - positioned on the left */}
-              <div className="relative z-10 w-80 h-80 overflow-hidden shadow-lg">
-                <img 
-                  src="/src/assets/images/talent-advisory-1.png" 
-                  alt="Analytics and Data Visualization"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              
-              {/* Secondary smaller image - positioned overlapping on the right */}
-              <div className="absolute right-6 bottom-4 z-20 w-48 h-48 p-3 bg-neutral-50 shadow-xl">
-                <div className="w-full h-full overflow-hidden">
-                  <img 
-                    src="/src/assets/images/talent-advisory-2.png" 
-                    alt="AI and Technology Solutions"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
+            {/* Left Side - Image */}
+            <div className="w-full max-w-lg mx-auto">
+              <img 
+                src="/src/assets/images/talent-advisory.png" 
+                alt="Talent Advisory Services and Solutions"
+                className="w-full h-auto object-contain"
+              />
             </div>
 
             {/* Right Side - Content */}

@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Button from '../ui/Button';
-import aiMlImage from '@/assets/images/ai_and_ml.svg';
 
 
 interface BannerItem {
@@ -23,7 +21,7 @@ const bannerItems: BannerItem[] = [
     description: 'We offer end-to-end AI and machine learning services that help businesses turn their data into smart, real-world solutions. Whether you\'re building AI from scratch or scaling existing capabilities, we support you through every phase—strategy, development, and deployment.',
     ctaText: 'Learn More',
     ctaLink: '/it-solutions',
-    image: '/src/assets/images/ai_and_ml.png',
+    image: '/src/assets/images/home-ai-ml.png',
     bgGradient: 'from-primary to-primary/80',
   },
   {
@@ -33,7 +31,7 @@ const bannerItems: BannerItem[] = [
     description: 'Transform and integrate your data across platforms with our comprehensive ETL solutions for better decision-making and business insights.',
     ctaText: 'Learn More',
     ctaLink: '/it-solutions',
-    image: '/src/assets/images/ai_and_ml.png',
+    image: '/src/assets/images/home-etl.png',
     bgGradient: 'from-secondary to-secondary/80',
   },
   {
@@ -43,7 +41,7 @@ const bannerItems: BannerItem[] = [
     description: 'Harness the power of big data with our scalable solutions designed to process, analyze, and extract valuable insights from massive datasets.',
     ctaText: 'Learn More',
     ctaLink: '/it-solutions',
-    image: '/src/assets/images/ai_and_ml.png',
+    image: '/src/assets/images/home-bigdata.png',
     bgGradient: 'from-accent to-accent/80',
   },
   {
@@ -53,7 +51,7 @@ const bannerItems: BannerItem[] = [
     description: 'Create exceptional user experiences with our UI/UX design services that combine aesthetics with functionality for maximum user engagement.',
     ctaText: 'Learn More',
     ctaLink: '/it-solutions',
-    image: '/src/assets/images/ai_and_ml.png',
+    image: '/src/assets/images/home-ui-ux.png',
     bgGradient: 'from-primary to-primary/80',
   },
   {
@@ -63,7 +61,7 @@ const bannerItems: BannerItem[] = [
     description: 'Migrate your data and technology infrastructure seamlessly with our comprehensive migration services that ensure minimal downtime and maximum efficiency.',
     ctaText: 'Learn More',
     ctaLink: '/it-solutions',
-    image: '/src/assets/images/ai_and_ml.png',
+    image: '/src/assets/images/home-data-tech.png',
     bgGradient: 'from-secondary to-secondary/80',
   },
   {
@@ -73,7 +71,7 @@ const bannerItems: BannerItem[] = [
     description: 'Transform your business operations with our comprehensive ERP services that integrate all your business processes into a unified, efficient system.',
     ctaText: 'Learn More',
     ctaLink: '/it-solutions',
-    image: '/src/assets/images/ai_and_ml.png',
+    image: '/src/assets/images/home-erp.png',
     bgGradient: 'from-primary to-primary/80',
   },
 ];
@@ -96,7 +94,7 @@ const HeroBanner = () => {
         <div className="flex flex-col md:flex-row h-full relative">
           
           {/* Left Half - Content Area */}
-          <div className="w-full md:w-1/2 flex flex-col text-white py-16 md:py-8 relative z-20 px-6 md:px-8 lg:px-12">
+          <div className="w-full md:w-4/9 flex flex-col text-white py-16 md:py-8 relative z-20 px-6 md:px-8 lg:px-12">
             {/* Top Content Area - Variable Height */}
             <div className="flex-1 flex flex-col justify-center min-h-0">
               <div className="space-y-6">
@@ -188,14 +186,21 @@ const HeroBanner = () => {
           </div>
 
           {/* Right Half - Image Area */}
-          <div className="w-full md:w-1/2 h-full relative">
+          <div className="w-full md:w-5/9 h-full relative">
             {/* Main Image */}
             <div className="absolute inset-0 z-10">
-              <img
-                src={currentItem.image}
-                alt={currentItem.title}
-                className="w-full h-full object-cover"
-              />
+              <AnimatePresence mode="wait">
+                <motion.img
+                  key={`image-${currentItem.id}`}
+                  src={currentItem.image}
+                  alt={currentItem.title}
+                  initial={{ opacity: 0, scale: 1.1 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.6, ease: "easeInOut" }}
+                  className="w-full h-full"
+                />
+              </AnimatePresence>
             </div>
           </div>
         </div>

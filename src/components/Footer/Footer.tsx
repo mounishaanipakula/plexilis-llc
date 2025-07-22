@@ -138,7 +138,7 @@ const Footer = () => {
                 <li>
                   <Link to="/it-solutions" className="text-neutral-300 hover:text-secondary transition-colors flex items-start">
                     <span className="text-secondary mr-2 mt-0.5">›</span>
-                    <span>Data And Technology Migration Services</span>
+                    Data And Technology Migration Services
                   </Link>
                 </li>
                 <li>

@@ -30,7 +30,7 @@ const AboutServices = () => {
               <div className="flex-1 mb-4">
                 <div className="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mb-3">
                   <img 
-                    src="/src/assets/icons/au-icon-1.png" 
+                    src="/assets/icons/au-icon-1.png" 
                     alt="AI And Machine Learning"
                     className="w-7 h-7"
                   />
@@ -62,7 +62,7 @@ const AboutServices = () => {
               <div className="flex-1 mb-4">
                 <div className="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mb-3">
                   <img 
-                    src="/src/assets/icons/au-icon-1.png" 
+                    src="/assets/icons/au-icon-1.png" 
                     alt="ETL And Data Integration"
                     className="w-7 h-7"
                   />
@@ -94,7 +94,7 @@ const AboutServices = () => {
               <div className="flex-1 mb-4">
                 <div className="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mb-3">
                   <img 
-                    src="/src/assets/icons/au-icon-1.png" 
+                    src="/assets/icons/au-icon-1.png" 
                     alt="Big Data Solutions"
                     className="w-7 h-7"
                   />
@@ -126,7 +126,7 @@ const AboutServices = () => {
               <div className="flex-1 mb-4">
                 <div className="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mb-3">
                   <img 
-                    src="/src/assets/icons/au-icon-1.png" 
+                    src="/assets/icons/au-icon-1.png" 
                     alt="UI And UX"
                     className="w-7 h-7"
                   />
@@ -158,7 +158,7 @@ const AboutServices = () => {
               <div className="flex-1 mb-4">
                 <div className="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mb-3">
                   <img 
-                    src="/src/assets/icons/au-icon-1.png" 
+                    src="/assets/icons/au-icon-1.png" 
                     alt="Data And Technology Migration"
                     className="w-7 h-7"
                   />
@@ -189,7 +189,7 @@ const AboutServices = () => {
               <div className="flex-1 mb-4">
                 <div className="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mb-3">
                   <img 
-                    src="/src/assets/icons/au-icon-1.png" 
+                    src="/assets/icons/au-icon-1.png" 
                     alt="ERP Services"
                     className="w-7 h-7"
                   />

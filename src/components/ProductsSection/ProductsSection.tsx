@@ -22,7 +22,7 @@ const ProductsSection = () => {
           {/* Left Side - Image */}
           <div className="w-full max-w-lg mx-auto">
             <img 
-              src="/src/assets/images/migration-accelerators.png" 
+              src="/assets/images/migration-accelerators.png" 
               alt="Migration Accelerators Tools and Services"
               className="w-full h-auto object-contain"
             />
@@ -151,7 +151,7 @@ const ProductsSection = () => {
           <div className="lg:order-1 order-1">
             <div className="w-full max-w-lg mx-auto">
               <img 
-                src="/src/assets/images/system-analyzers.png" 
+                src="/assets/images/system-analyzers.png" 
                 alt="System Analyzers Dashboard with overlays"
                 className="w-full h-auto object-contain"
               />
@@ -164,7 +164,7 @@ const ProductsSection = () => {
           {/* Left Side - Image */}
           <div className="w-full max-w-lg mx-auto">
             <img 
-              src="/src/assets/images/deep-research.png" 
+              src="/assets/images/deep-research.png" 
               alt="Custom Deep Research Agentic Workflows"
               className="w-full h-auto object-contain"
             />

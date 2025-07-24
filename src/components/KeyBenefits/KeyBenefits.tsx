@@ -66,7 +66,7 @@ const KeyBenefits = () => {
             <div className="flex justify-center">
               <div className="w-full max-w-md mx-auto">
                 <img 
-                  src="/src/assets/images/key-benefits.png" 
+                  src="/assets/images/key-benefits.png" 
                   alt="Team meeting discussing migration benefits"
                   className="w-full h-80 object-cover rounded-2xl"
                 />

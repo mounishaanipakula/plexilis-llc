@@ -21,7 +21,7 @@ const bannerItems: BannerItem[] = [
     description: 'We offer end-to-end AI and machine learning services that help businesses turn their data into smart, real-world solutions. Whether you\'re building AI from scratch or scaling existing capabilities, we support you through every phase—strategy, development, and deployment.',
     ctaText: 'Learn More',
     ctaLink: '/it-solutions',
-    image: '/src/assets/images/home-ai-ml.png',
+    image: '/assets/images/home-ai-ml.png',
     bgGradient: 'from-primary to-primary/80',
   },
   {
@@ -31,7 +31,7 @@ const bannerItems: BannerItem[] = [
     description: 'Transform and integrate your data across platforms with our comprehensive ETL solutions for better decision-making and business insights.',
     ctaText: 'Learn More',
     ctaLink: '/it-solutions',
-    image: '/src/assets/images/home-etl.png',
+    image: '/assets/images/home-etl.png',
     bgGradient: 'from-secondary to-secondary/80',
   },
   {
@@ -41,7 +41,7 @@ const bannerItems: BannerItem[] = [
     description: 'Harness the power of big data with our scalable solutions designed to process, analyze, and extract valuable insights from massive datasets.',
     ctaText: 'Learn More',
     ctaLink: '/it-solutions',
-    image: '/src/assets/images/home-bigdata.png',
+    image: '/assets/images/home-bigdata.png',
     bgGradient: 'from-accent to-accent/80',
   },
   {
@@ -51,7 +51,7 @@ const bannerItems: BannerItem[] = [
     description: 'Create exceptional user experiences with our UI/UX design services that combine aesthetics with functionality for maximum user engagement.',
     ctaText: 'Learn More',
     ctaLink: '/it-solutions',
-    image: '/src/assets/images/home-ui-ux.png',
+    image: '/assets/images/home-ui-ux.png',
     bgGradient: 'from-primary to-primary/80',
   },
   {
@@ -61,7 +61,7 @@ const bannerItems: BannerItem[] = [
     description: 'Migrate your data and technology infrastructure seamlessly with our comprehensive migration services that ensure minimal downtime and maximum efficiency.',
     ctaText: 'Learn More',
     ctaLink: '/it-solutions',
-    image: '/src/assets/images/home-data-tech.png',
+    image: '/assets/images/home-data-tech.png',
     bgGradient: 'from-secondary to-secondary/80',
   },
   {
@@ -71,7 +71,7 @@ const bannerItems: BannerItem[] = [
     description: 'Transform your business operations with our comprehensive ERP services that integrate all your business processes into a unified, efficient system.',
     ctaText: 'Learn More',
     ctaLink: '/it-solutions',
-    image: '/src/assets/images/home-erp.png',
+    image: '/assets/images/home-erp.png',
     bgGradient: 'from-primary to-primary/80',
   },
 ];

@@ -12,7 +12,7 @@ const TechnologyExpertise = () => {
             {/* Left Side - Image */}
             <div className="w-full max-w-lg mx-auto">
               <img 
-                src="/src/assets/images/technology-experts.png" 
+                src="/assets/images/technology-experts.png" 
                 alt="Technology Experts Team with Expert Team Badge"
                 className="w-full h-auto object-contain"
               />
@@ -40,7 +40,7 @@ const TechnologyExpertise = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="/src/assets/images/about-us-contact.png" 
+            src="/assets/images/about-us-contact.png" 
             alt="Contact Us Background"
             className="w-full h-full object-cover"
           />

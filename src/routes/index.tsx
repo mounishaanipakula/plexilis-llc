@@ -21,7 +21,6 @@ import ITSolutions from '../pages/ITSolutions';
 import Contact from '../pages/Contact';
 
 // Lazy load other pages
-const OurCompany = lazyLoad(Promise.resolve({ default: () => <PageLayout title="Our Company" /> }));
 const TechAdvisory = lazyLoad(Promise.resolve({ default: () => <PageLayout title="Tech Advisory" /> }));
 const Careers = lazyLoad(Promise.resolve({ default: () => <PageLayout title="Careers" /> }));
 const Blog = lazyLoad(Promise.resolve({ default: () => <PageLayout title="Blog" /> }));

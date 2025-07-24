@@ -19,35 +19,35 @@ const OurExpertise = () => {
           {/* Row 1 */}
           <div className="flex items-center justify-center h-16 md:h-20 w-28 md:w-32">
             <img 
-              src="/src/assets/icons/data-iku.png" 
+              src="/assets/icons/data-iku.png" 
               alt="Dataiku"
               className="max-h-12 md:max-h-16 max-w-full object-contain"
             />
           </div>
           <div className="flex items-center justify-center h-16 md:h-20 w-28 md:w-32">
             <img 
-              src="/src/assets/icons/alation.png" 
+              src="/assets/icons/alation.png" 
               alt="Alation"
               className="max-h-12 md:max-h-16 max-w-full object-contain"
             />
           </div>
           <div className="flex items-center justify-center h-16 md:h-20 w-28 md:w-32">
             <img 
-              src="/src/assets/icons/informatica.png" 
+              src="/assets/icons/informatica.png" 
               alt="Informatica"
               className="max-h-12 md:max-h-16 max-w-full object-contain"
             />
           </div>
           <div className="flex items-center justify-center h-16 md:h-20 w-28 md:w-32">
             <img 
-              src="/src/assets/icons/aws.png" 
+              src="/assets/icons/aws.png" 
               alt="AWS"
               className="max-h-12 md:max-h-16 max-w-full object-contain"
             />
           </div>
           <div className="flex items-center justify-center h-16 md:h-20 w-28 md:w-32">
             <img 
-              src="/src/assets/icons/azure.png" 
+              src="/assets/icons/azure.png" 
               alt="Microsoft Azure"
               className="max-h-12 md:max-h-16 max-w-full object-contain"
             />
@@ -56,35 +56,35 @@ const OurExpertise = () => {
           {/* Row 2 */}
           <div className="flex items-center justify-center h-16 md:h-20 w-28 md:w-32">
             <img 
-              src="/src/assets/icons/hadoop.png" 
+              src="/assets/icons/hadoop.png" 
               alt="Hadoop"
               className="max-h-12 md:max-h-16 max-w-full object-contain"
             />
           </div>
           <div className="flex items-center justify-center h-16 md:h-20 w-28 md:w-32">
             <img 
-              src="/src/assets/icons/gcp.png" 
+              src="/assets/icons/gcp.png" 
               alt="Google Cloud"
               className="max-h-12 md:max-h-16 max-w-full object-contain"
             />
           </div>
           <div className="flex items-center justify-center h-16 md:h-20 w-28 md:w-32">
             <img 
-              src="/src/assets/icons/java.png" 
+              src="/assets/icons/java.png" 
               alt="Java"
               className="max-h-12 md:max-h-16 max-w-full object-contain"
             />
           </div>
           <div className="flex items-center justify-center h-16 md:h-20 w-28 md:w-32">
             <img 
-              src="/src/assets/icons/salesforce.png" 
+              src="/assets/icons/salesforce.png" 
               alt="Salesforce"
               className="max-h-12 md:max-h-16 max-w-full object-contain"
             />
           </div>
           <div className="flex items-center justify-center h-16 md:h-20 w-28 md:w-32">
             <img 
-              src="/src/assets/icons/sap.png" 
+              src="/assets/icons/sap.png" 
               alt="SAP"
               className="max-h-12 md:max-h-16 max-w-full object-contain"
             />
@@ -93,35 +93,35 @@ const OurExpertise = () => {
           {/* Row 3 */}
           <div className="flex items-center justify-center h-16 md:h-20 w-28 md:w-32">
             <img 
-              src="/src/assets/icons/snowflake.png" 
+              src="/assets/icons/snowflake.png" 
               alt="Snowflake"
               className="max-h-12 md:max-h-16 max-w-full object-contain"
             />
           </div>
           <div className="flex items-center justify-center h-16 md:h-20 w-28 md:w-32">
             <img 
-              src="/src/assets/icons/talend.png" 
+              src="/assets/icons/talend.png" 
               alt="Talend"
               className="max-h-12 md:max-h-16 max-w-full object-contain"
             />
           </div>
           <div className="flex items-center justify-center h-16 md:h-20 w-28 md:w-32">
             <img 
-              src="/src/assets/icons/uipath.png" 
+              src="/assets/icons/uipath.png" 
               alt="UiPath"
               className="max-h-12 md:max-h-16 max-w-full object-contain"
             />
           </div>
           <div className="flex items-center justify-center h-16 md:h-20 w-28 md:w-32">
             <img 
-              src="/src/assets/icons/nifi.png" 
+              src="/assets/icons/nifi.png" 
               alt="Apache NiFi"
               className="max-h-12 md:max-h-16 max-w-full object-contain"
             />
           </div>
           <div className="flex items-center justify-center h-16 md:h-20 w-28 md:w-32">
             <img 
-              src="/src/assets/icons/airflow.png" 
+              src="/assets/icons/airflow.png" 
               alt="Apache Airflow"
               className="max-h-12 md:max-h-16 max-w-full object-contain"
             />

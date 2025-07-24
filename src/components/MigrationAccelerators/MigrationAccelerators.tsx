@@ -27,7 +27,7 @@ const MigrationAccelerators = () => {
               <div className="flex items-center space-x-4">
                 <div className="w-14 h-14 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <img 
-                    src="/src/assets/icons/products-dm-icon.png" 
+                    src="/assets/icons/products-dm-icon.png" 
                     alt="Database Migration"
                     className="w-8 h-8"
                   />
@@ -46,7 +46,7 @@ const MigrationAccelerators = () => {
               <div className="flex items-center space-x-4">
                 <div className="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <img 
-                    src="/src/assets/icons/products-cm-icon.png" 
+                    src="/assets/icons/products-cm-icon.png" 
                     alt="Cloud Migration"
                     className="w-8 h-8"
                   />
@@ -65,7 +65,7 @@ const MigrationAccelerators = () => {
               <div className="flex items-center space-x-4">
                 <div className="w-14 h-14 bg-pink-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <img 
-                    src="/src/assets/icons/products-etl-icon.png" 
+                    src="/assets/icons/products-etl-icon.png" 
                     alt="ETL Tool Migration"
                     className="w-8 h-8"
                   />
@@ -84,7 +84,7 @@ const MigrationAccelerators = () => {
               <div className="flex items-center space-x-4">
                 <div className="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <img 
-                    src="/src/assets/icons/products-aw-icon.png" 
+                    src="/assets/icons/products-aw-icon.png" 
                     alt="Analytics Workflow"
                     className="w-8 h-8"
                   />
@@ -103,7 +103,7 @@ const MigrationAccelerators = () => {
               <div className="flex items-center space-x-4">
                 <div className="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <img 
-                    src="/src/assets/icons/products-dl-icon.png" 
+                    src="/assets/icons/products-dl-icon.png" 
                     alt="Data Lake Migration"
                     className="w-8 h-8"
                   />
@@ -122,7 +122,7 @@ const MigrationAccelerators = () => {
               <div className="flex items-center space-x-4">
                 <div className="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <img 
-                    src="/src/assets/icons/products-vu-icon.png" 
+                    src="/assets/icons/products-vu-icon.png" 
                     alt="Version Upgrades"
                     className="w-8 h-8"
                   />

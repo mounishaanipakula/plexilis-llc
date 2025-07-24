@@ -48,7 +48,7 @@ const ITSolutionsTabs = () => {
           {/* Left Section - Just the left image */}
           <div className="lg:col-span-2 flex justify-center">
             <img 
-                src="/src/assets/images/ai-ml-1.png" 
+                src="/assets/images/ai-ml-1.png" 
                 alt="Artificial Intelligence Technology"
                 className="w-70 h-80 lg:h-[450px] object-fit"
               />
@@ -114,7 +114,7 @@ const ITSolutionsTabs = () => {
               {/* Right Image - Person at Computer */}
               <div className="lg:col-span-1 flex justify-center lg:justify-end">
                   <img 
-                    src="/src/assets/images/ai-ml-2.png" 
+                    src="/assets/images/ai-ml-2.png" 
                     alt="AI Technology Professional"
                     className="w-50 h-70 lg:h-80 object-fit"
                   />
@@ -131,7 +131,7 @@ const ITSolutionsTabs = () => {
           {/* Background Image */}
           <div className="absolute inset-0">
             <img 
-              src="/src/assets/images/ai-ml-4.png" 
+              src="/assets/images/ai-ml-4.png" 
               alt="AI Background Banner"
               className="w-full h-80 object-cover"
             />
@@ -149,7 +149,7 @@ const ITSolutionsTabs = () => {
             <div className="relative max-w-4xl mx-auto px-4">
               <div className="relative">
                 <img 
-                  src="/src/assets/images/ai-ml-3.png" 
+                  src="/assets/images/ai-ml-3.png" 
                   alt="AI Business Impact - Robot Hand and Human Hand reaching toward each other"
                   className="w-full h-auto object-cover object-center"
                 />

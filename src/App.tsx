@@ -1,5 +1,4 @@
 import { Outlet } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import './App.css';

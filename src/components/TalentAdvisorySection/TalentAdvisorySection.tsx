@@ -23,7 +23,7 @@ const TalentAdvisorySection = () => {
             {/* Left Side - Image */}
             <div className="w-full max-w-lg mx-auto">
               <img 
-                src="/src/assets/images/talent-advisory.png" 
+                src="/assets/images/talent-advisory.png" 
                 alt="Talent Advisory Services and Solutions"
                 className="w-full h-auto object-contain"
               />
@@ -34,7 +34,7 @@ const TalentAdvisorySection = () => {
               {/* Feature 1 - Turnaround Excellence */}
               <div className="flex items-start space-x-4">
                 <img 
-                  src="/src/assets/icons/ta-icon-1.png" 
+                  src="/assets/icons/ta-icon-1.png" 
                   alt="Turnaround Excellence"
                   className="w-12 h-12 flex-shrink-0 mt-1"
                 />
@@ -51,7 +51,7 @@ const TalentAdvisorySection = () => {
               {/* Feature 2 - On-Time Design & Execution */}
               <div className="flex items-start space-x-4">
                 <img 
-                  src="/src/assets/icons/ta-icon-2.png" 
+                  src="/assets/icons/ta-icon-2.png" 
                   alt="On-Time Design & Execution"
                   className="w-12 h-12 flex-shrink-0 mt-1"
                 />
@@ -68,7 +68,7 @@ const TalentAdvisorySection = () => {
               {/* Feature 3 - Proactive, Personalized Approach */}
               <div className="flex items-start space-x-4">
                 <img 
-                  src="/src/assets/icons/ta-icon-3.png" 
+                  src="/assets/icons/ta-icon-3.png" 
                   alt="Proactive, Personalized Approach"
                   className="w-12 h-12 flex-shrink-0 mt-1"
                 />

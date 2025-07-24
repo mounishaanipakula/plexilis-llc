@@ -5,6 +5,7 @@ import svgr from 'vite-plugin-svgr';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/', // Set to '/' for custom domain, use '/repo-name/' for GitHub Pages subdomain
   plugins: [
     react(),
     svgr({

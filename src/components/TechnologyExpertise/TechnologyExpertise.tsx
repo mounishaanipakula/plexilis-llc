@@ -1,5 +1,7 @@
 import OurExpertise from '../OurExpertise/OurExpertise';
 
+import { Link } from 'react-router-dom';
+
 const TechnologyExpertise = () => {
   return (
     <>
@@ -54,8 +56,8 @@ const TechnologyExpertise = () => {
               Join our list of satisfied clients. Contact us to discuss your software needs!
             </h2>
             
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="bg-secondary text-white pl-6 rounded-full font-normal transition-colors duration-300 inline-flex items-center space-x-3"
             >
               <span>Contact Us</span>
@@ -64,7 +66,7 @@ const TechnologyExpertise = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

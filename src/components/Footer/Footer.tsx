@@ -112,37 +112,37 @@ const Footer = () => {
               </h3>
               <ul className="space-y-2 md:space-y-3">
                 <li>
-                  <Link to="/it-solutions" className="text-neutral-300 hover:text-secondary transition-colors flex items-center">
+                  <Link to="/it-solutions?tab=ai-ml" className="text-neutral-300 hover:text-secondary transition-colors flex items-center">
                     <span className="text-secondary mr-2">›</span>
                     AI And Machine Learning
                   </Link>
                 </li>
                 <li>
-                  <Link to="/it-solutions" className="text-neutral-300 hover:text-secondary transition-colors flex items-center">
+                  <Link to="/it-solutions?tab=etl-data" className="text-neutral-300 hover:text-secondary transition-colors flex items-center">
                     <span className="text-secondary mr-2">›</span>
                     ETL And Data Integration
                   </Link>
                 </li>
                 <li>
-                  <Link to="/it-solutions" className="text-neutral-300 hover:text-secondary transition-colors flex items-center">
+                  <Link to="/it-solutions?tab=big-data" className="text-neutral-300 hover:text-secondary transition-colors flex items-center">
                     <span className="text-secondary mr-2">›</span>
                     Big Data Solutions
                   </Link>
                 </li>
                 <li>
-                  <Link to="/it-solutions" className="text-neutral-300 hover:text-secondary transition-colors flex items-center">
+                  <Link to="/it-solutions?tab=ui-ux" className="text-neutral-300 hover:text-secondary transition-colors flex items-center">
                     <span className="text-secondary mr-2">›</span>
                     UI And UX
                   </Link>
                 </li>
                 <li>
-                  <Link to="/it-solutions" className="text-neutral-300 hover:text-secondary transition-colors flex items-start">
+                  <Link to="/it-solutions?tab=data-tech" className="text-neutral-300 hover:text-secondary transition-colors flex items-start">
                     <span className="text-secondary mr-2 mt-0.5">›</span>
                     Data And Technology Migration Services
                   </Link>
                 </li>
                 <li>
-                  <Link to="/it-solutions" className="text-neutral-300 hover:text-secondary transition-colors flex items-center">
+                  <Link to="/it-solutions?tab=erp" className="text-neutral-300 hover:text-secondary transition-colors flex items-center">
                     <span className="text-secondary mr-2">›</span>
                     ERP Services
                   </Link>

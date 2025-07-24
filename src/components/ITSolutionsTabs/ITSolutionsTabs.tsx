@@ -1,7 +1,22 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const ITSolutionsTabs = () => {
   const [activeTab, setActiveTab] = useState('ai-ml');
+  const location = useLocation();
+
+  // Handle URL parameters to set active tab
+  useEffect(() => {
+    const urlParams = new URLSearchParams(location.search);
+    const tabParam = urlParams.get('tab');
+    
+    if (tabParam) {
+      const validTabs = ['etl-data', 'ai-ml', 'big-data', 'ui-ux', 'data-tech', 'erp'];
+      if (validTabs.includes(tabParam)) {
+        setActiveTab(tabParam);
+      }
+    }
+  }, [location.search]);
   const [openAccordion, setOpenAccordion] = useState<string | null>('intelligent');
 
   const tabs = [
@@ -28,118 +43,98 @@ const ITSolutionsTabs = () => {
       </div>
 
       {/* Main Content Section */}
-      <div className="relative">
-        {/* Left Image - AI Illustration */}
-        <div className="absolute left-0 top-0 w-80 h-96 rounded-[2rem] overflow-hidden shadow-2xl">
-          <img 
-            src="/src/assets/images/ai-ml-1.png" 
-            alt="Artificial Intelligence Technology"
-            className="w-full h-full object-cover"
-          />
-          
-          {/* Overlay Text on Image */}
-          <div className="absolute top-6 left-6 text-white">
-            <h3 className="text-lg font-bold">Artificial intelligence</h3>
+      <div className="max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 lg:gap-6 items-start">
+          {/* Left Section - Just the left image */}
+          <div className="lg:col-span-2 flex justify-center">
+            <img 
+                src="/src/assets/images/ai-ml-1.png" 
+                alt="Artificial Intelligence Technology"
+                className="w-70 h-80 lg:h-[450px] object-fit"
+              />
           </div>
-        </div>
 
-        {/* Center Content Area */}
-        <div className="ml-96 mr-80 px-8">
-          <h3 className="text-2xl md:text-3xl font-bold text-primary mb-8 text-center">
-            We design intelligent systems that go beyond static responses capable of reasoning.
-          </h3>
-          
-          <div className="space-y-6">
-            {/* Feature 1 - Capable of reasoning */}
-            <div className="bg-white rounded-xl p-6 shadow-lg border border-neutral-100">
-              <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-white font-bold text-sm">01</span>
+          {/* Right Section - Title + Items + Right Image */}
+          <div className="lg:col-span-3 space-y-6">
+            {/* Title at the top of right section */}
+            <h3 className="text-xl lg:text-2xl font-bold text-primary text-left">
+              We design intelligent systems that go beyond static responses capable of reasoning.
+            </h3>
+            
+            {/* Content area with items and right image */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+              {/* Items */}
+              <div className="lg:col-span-2 space-y-6 text-left">
+                {/* Feature 1 - Capable of reasoning */}
+                <div className="pb-6 border-b border-secondary">
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0">
+                      <span className="text-secondary font-bold text-lg">01.</span>
+                    </div>
+                    <div className="text-left">
+                      <h4 className="text-base lg:text-lg font-bold text-primary mb-2">Capable of reasoning</h4>
+                      <p className="text-neutral-600 text-sm leading-relaxed">
+                        Processes complex information to draw logical conclusions and make informed decisions.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="text-lg font-bold text-primary mb-2">Capable of reasoning</h4>
-                  <p className="text-neutral-600 text-sm leading-relaxed">
-                    Processes complex information to draw logical conclusions and make informed decisions.
-                  </p>
+
+                {/* Feature 2 - Using tools */}
+                <div className="pb-6 border-b border-secondary">
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0">
+                      <span className="text-secondary font-bold text-lg">02.</span>
+                    </div>
+                    <div className="text-left">
+                      <h4 className="text-base lg:text-lg font-bold text-primary mb-2">Using tools</h4>
+                      <p className="text-neutral-600 text-sm leading-relaxed">
+                        Interacts with digital tools like search engines, calculators, or APIs to extend its capabilities.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Feature 3 - Maintaining Memory */}
+                <div className="pb-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0">
+                      <span className="text-secondary font-bold text-lg">03.</span>
+                    </div>
+                    <div className="text-left">
+                      <h4 className="text-base lg:text-lg font-bold text-primary mb-2">Maintaining Memory</h4>
+                      <p className="text-neutral-600 text-sm leading-relaxed">
+                        Keeps track of relevant information from prior interactions to sustain context.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* Feature 2 - Using tools */}
-            <div className="bg-white rounded-xl p-6 shadow-lg border border-neutral-100">
-              <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-white font-bold text-sm">02</span>
-                </div>
-                <div>
-                  <h4 className="text-lg font-bold text-primary mb-2">Using tools</h4>
-                  <p className="text-neutral-600 text-sm leading-relaxed">
-                    Interacts with digital tools like search engines, calculators, or APIs to extend its capabilities.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Feature 3 - Maintaining Memory */}
-            <div className="bg-white rounded-xl p-6 shadow-lg border border-neutral-100">
-              <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-white font-bold text-sm">03</span>
-                </div>
-                <div>
-                  <h4 className="text-lg font-bold text-primary mb-2">Maintaining Memory</h4>
-                  <p className="text-neutral-600 text-sm leading-relaxed">
-                    Keeps track of relevant information from prior interactions to sustain context.
-                  </p>
-                </div>
+              {/* Right Image - Person at Computer */}
+              <div className="lg:col-span-1 flex justify-center lg:justify-end">
+                  <img 
+                    src="/src/assets/images/ai-ml-2.png" 
+                    alt="AI Technology Professional"
+                    className="w-50 h-70 lg:h-80 object-fit"
+                  />
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Right Image - Person at Computer */}
-        <div className="absolute right-0 top-12 w-72 h-80 rounded-[1.5rem] overflow-hidden shadow-xl">
-          <img 
-            src="/src/assets/images/ai-ml-2.png" 
-            alt="AI Technology Professional"
-            className="w-full h-full object-cover"
-          />
         </div>
       </div>
 
       {/* AI Business Impact Section */}
       <div className="mt-24 relative">
-        {/* Hero Section with Blue Background */}
-        <div className="bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900 rounded-[2.5rem] p-8 md:p-12 lg:p-16 relative overflow-hidden">
-          {/* Background Dot Pattern */}
-          <div className="absolute inset-0 opacity-30">
-            <div 
-              className="w-full h-full"
-              style={{
-                backgroundImage: `radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px)`,
-                backgroundSize: '20px 20px'
-              }}
-            ></div>
-          </div>
-          
-          {/* Additional flowing pattern overlay */}
-          <div className="absolute inset-0 opacity-20">
-            <div className="w-full h-full">
-              <svg className="w-full h-full" viewBox="0 0 400 300" fill="none">
-                <path 
-                  d="M50,150 Q200,50 350,150 T650,150" 
-                  stroke="rgba(255,255,255,0.1)" 
-                  strokeWidth="2" 
-                  fill="none"
-                />
-                <path 
-                  d="M0,200 Q150,100 300,200 T600,200" 
-                  stroke="rgba(255,255,255,0.1)" 
-                  strokeWidth="1.5" 
-                  fill="none"
-                />
-              </svg>
-            </div>
+        {/* Hero Section with Background Image */}
+        <div className="relative p-8 md:p-12 lg:p-16 overflow-hidden">
+          {/* Background Image */}
+          <div className="absolute inset-0">
+            <img 
+              src="/src/assets/images/ai-ml-4.png" 
+              alt="AI Background Banner"
+              className="w-full h-80 object-cover"
+            />
           </div>
           
           <div className="relative z-10">
@@ -150,19 +145,14 @@ const ITSolutionsTabs = () => {
               </h2>
             </div>
 
-            {/* Main Hero Image Container */}
-            <div className="relative max-w-5xl mx-auto px-4">
+            {/* Main Hero Image Container - Overlay */}
+            <div className="relative max-w-4xl mx-auto px-4">
               <div className="relative">
-                <div className="rounded-[2.5rem] overflow-hidden shadow-2xl bg-gradient-to-br from-orange-300 via-orange-200 to-pink-200 aspect-[16/9] md:aspect-[2/1]">
-                  <img 
-                    src="/src/assets/images/ai-business-impact.png" 
-                    alt="AI Business Impact - Robot Hand and Human Hand reaching toward each other"
-                    className="w-full h-full object-cover object-center"
-                  />
-                </div>
-                
-                {/* Subtle glow effect */}
-                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-[2.5rem] blur opacity-20 -z-10"></div>
+                <img 
+                  src="/src/assets/images/ai-ml-3.png" 
+                  alt="AI Business Impact - Robot Hand and Human Hand reaching toward each other"
+                  className="w-full h-auto object-cover object-center"
+                />
               </div>
             </div>
           </div>
@@ -271,7 +261,7 @@ const ITSolutionsTabs = () => {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`px-4 py-2 md:px-6 md:py-3 rounded-full text-sm md:text-base font-medium transition-all duration-300 ${
+              className={`px-4 py-2 md:px-6 md:py-3 rounded-xl text-sm md:text-base font-medium transition-all duration-300 ${
                 activeTab === tab.id
                   ? 'bg-secondary text-white shadow-lg'
                   : 'bg-neutral-100 text-neutral-700 hover:bg-neutral-200'

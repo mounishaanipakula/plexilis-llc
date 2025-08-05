@@ -3,14 +3,14 @@ import ReadMoreButton from '../ui/ReadMoreButton';
 const ProductsSection = () => {
   return (
     <section className="py-16 md:py-24">
-      <div className="px-4 mx-auto">
+      <div className="px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-[36px] font-bold leading-[180%] tracking-[0%] text-center text-primary">
             Our <span className="text-secondary">Products</span>
           </h2>
           <div className="w-48 h-0.5 bg-secondary mx-auto mb-8"></div>
-          <p className="text-neutral-600 text-lg max-w-4xl mx-auto leading-relaxed">
+          <p className="text-neutral-600 text-lg md:text-xl lg:text-2xl xl:text-[24px] font-normal leading-[180%] tracking-[0%] text-center max-w-5xl mx-auto">
             Our innovative products are designed to accelerate your digital transformation journey, driving efficiency,
             scalability, and success. With advanced technology and seamless integration, we help businesses stay ahead in
             an ever-evolving digital landscape. Whether it's automation, data-driven insights.
@@ -29,24 +29,24 @@ const ProductsSection = () => {
           </div>
 
           {/* Right Side - Content */}
-          <div className="space-y-6">
+          <div className="space-y-6 max-w-xl">
             {/* Migration Accelerators */}
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl xl:text-[45px] font-bold leading-[58.5px] tracking-[0%] capitalize text-primary mb-4 text-left">
                 Migration Accelerators
               </h3>
-              <h4 className="text-xl font-semibold text-neutral-700 mb-6">
+              <h4 className="text-xl md:text-2xl lg:text-3xl xl:text-[32px] font-medium leading-[46px] tracking-[0%] capitalize text-neutral-700 mb-6 text-left">
                 To Accelerate And De-Risk <span className="text-secondary">Complex Migration Projects.</span>
               </h4>
               
-              <p className="text-neutral-600 mb-8 leading-relaxed">
+              <p className="text-neutral-600 text-base md:text-lg xl:text-[17px] font-normal leading-[32.3px] tracking-[0%] mb-8 text-left">
                 To accelerate and de-risk complex migration projects, we've developed a 
                 suite of proprietary tools purpose-built for seamless data and platform 
                 transitions.
               </p>
 
               {/* Features Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+              <div className="grid grid-cols-2 gap-3 mb-8 max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
                 <div className="flex items-center space-x-3 bg-neutral-50 p-3 rounded-lg">
                   <div className="w-5 h-5 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -90,24 +90,24 @@ const ProductsSection = () => {
         {/* Content Grid - System Analyzers (Flipped Layout) */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-24 mb-24">
           {/* Right Side - Content */}
-          <div className="space-y-8 lg:order-2 order-2">
+          <div className="space-y-8 lg:order-2 order-2 max-w-xl">
             {/* System Analyzers */}
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl xl:text-[45px] font-bold leading-[58.5px] tracking-[0%] capitalize text-primary mb-4 text-left">
                 System Analyzers
               </h3>
-              <h4 className="text-xl font-semibold text-neutral-700 mb-6">
+              <h4 className="text-xl md:text-2xl lg:text-3xl xl:text-[32px] font-medium leading-[46px] tracking-[0%] capitalize text-neutral-700 mb-6 text-left">
                 Our Suite Of System Analyzers Is Designed To <span className="text-secondary">Deep, Automated Insights</span>
               </h4>
               
-              <p className="text-neutral-600 mb-8 leading-relaxed">
+              <p className="text-neutral-600 text-base md:text-lg xl:text-[17px] font-normal leading-[32.3px] tracking-[0%] mb-8 text-left">
                 Our suite of system analyzers is designed to provide deep, automated 
                 insights into the health, security, and performance of critical infrastructure 
                 components.
               </p>
 
               {/* Features Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+              <div className="grid grid-cols-2 gap-3 mb-8 max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
                 <div className="flex items-center space-x-3 bg-neutral-50 p-3 rounded-lg">
                   <div className="w-5 h-5 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -171,24 +171,24 @@ const ProductsSection = () => {
           </div>
 
           {/* Right Side - Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 max-w-xl">
             {/* Custom Deep Research */}
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl xl:text-[45px] font-bold leading-[58.5px] tracking-[0%] capitalize text-primary mb-4 text-left">
                 Custom Deep Research
               </h3>
-              <h4 className="text-xl font-semibold text-neutral-700 mb-6">
+              <h4 className="text-xl md:text-2xl lg:text-3xl xl:text-[32px] font-medium leading-[46px] tracking-[0%] capitalize text-neutral-700 mb-6 text-left">
                 Specialize In Building Custom, <span className="text-secondary">Multi-Step Agentic Workflows</span>
               </h4>
               
-              <p className="text-neutral-600 mb-8 leading-relaxed">
+              <p className="text-neutral-600 text-base md:text-lg xl:text-[17px] font-normal leading-[32.3px] tracking-[0%] mb-8 text-left">
                 We specialize in building custom, multi-step agentic workflows that simulate 
                 deep research within enterprise ecosystems. Leveraging advanced AI agents 
                 using various open-source frameworks
               </p>
 
               {/* Features Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+              <div className="grid grid-cols-2 gap-3 mb-8 max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
                 <div className="flex items-center space-x-3 bg-neutral-50 p-3 rounded-lg">
                   <div className="w-5 h-5 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

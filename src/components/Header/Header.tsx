@@ -45,11 +45,11 @@ const Header = () => {
 
   return (
     <header 
-      className={`w-full z-50 transition-all duration-300 h-20 ${
-        scrolled ? 'bg-white/95 shadow-md backdrop-blur-sm' : 'bg-white'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 h-20 px-6 md:px-10 lg:px-16 bg-white ${
+        scrolled ? 'shadow-lg' : ''
       }`}
     >
-      <div className="mx-auto px-6 md:px-8 lg:px-12 h-full">
+      <div className="mx-auto px-8 md:px-12 lg:px-16 h-full">
         <div className="flex items-center justify-between h-full">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0 h-full flex items-center">
@@ -62,15 +62,15 @@ const Header = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`relative px-1 py-2 text-sm font-medium transition-colors duration-200 ${
+                className={`relative px-1 py-4 transition-colors duration-200 text-center capitalize text-[17px] leading-8 ${
                   location.pathname === item.path
-                    ? 'text-secondary'
-                    : 'text-primary hover:text-secondary'
+                    ? 'text-secondary font-bold'
+                    : 'text-primary hover:text-secondary font-normal'
                 }`}
               >
                 {item.name}
                 {location.pathname === item.path && (
-                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-secondary"></span>
+                  <span className="absolute bottom-0 left-0 w-full h-1 bg-secondary"></span>
                 )}
               </Link>
             ))}

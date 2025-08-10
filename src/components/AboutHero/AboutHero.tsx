@@ -1,6 +1,6 @@
 const AboutHero = () => {
   return (
-    <div className="z-0">
+    <div className="relative pt-20">
       <img 
         src="/assets/images/about-us.png" 
         alt="About Us - Team Collaboration"

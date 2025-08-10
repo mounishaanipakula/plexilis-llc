@@ -19,12 +19,12 @@ const TechnologyExpertise = () => {
             </div>
 
             {/* Right Side - Content */}
-            <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <div className="space-y-6 max-w-xl">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[45px] font-bold capitalize align-middle tracking-[0%] text-left mb-6" style={{ fontFamily: 'Inter', lineHeight: '58.5px' }}>
                 Technology <span className="text-secondary">Experts</span>
               </h2>
               
-              <p className="text-neutral-600 text-lg leading-relaxed">
+              <p className="text-neutral-600 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[24px] font-normal align-middle tracking-[0%] text-left" style={{ fontFamily: 'Inter', lineHeight: '40px' }}>
                 As experts in open-source data platforms, we harness technologies like Apache NiFi, Apache Flink, Kafka, and 
                 Spark to build scalable, flexible solutions without vendor lock-in. Whether you're designing real-time data pipelines, 
                 stream processing workflows, or complex event-driven systems, our team brings deep technical skill with 

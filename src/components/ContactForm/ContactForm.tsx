@@ -28,7 +28,7 @@ const ContactForm = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 max-w-5xl mx-auto bg-neutral-50 rounded-xl overflow-hidden">
           {/* Left Side - Contact Form */}
           <div className="p-6 md:p-8 lg:p-10 border-r border-neutral-200">
-            <h2 className="text-xl md:text-2xl font-bold text-primary mb-6 md:mb-8">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[30px] font-bold text-primary mb-6 md:mb-8 tracking-[0%] align-middle uppercase text-left" style={{ fontFamily: 'Inter', lineHeight: '30px' }}>
               CONTACT US
             </h2>
             
@@ -90,7 +90,7 @@ const ContactForm = () => {
               </div>
 
               {/* Submit Button */}
-              <div className="pt-2">
+              <div className="pt-2 flex justify-start">
                 <button
                   type="submit"
                   className="bg-secondary hover:bg-secondary-hover text-white pl-6 rounded-full font-medium transition-colors duration-300 inline-flex items-center space-x-3 w-fit"
@@ -109,10 +109,10 @@ const ContactForm = () => {
           {/* Right Side - Contact Information */}
           <div className="p-6 md:p-8 lg:p-10 space-y-6 md:space-y-8 text-left">
             <div>
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-primary mb-3 md:mb-4 text-left">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-bold text-primary mb-3 md:mb-4 text-left tracking-[0%] align-middle" style={{ fontFamily: 'Inter', lineHeight: '44px' }}>
                 Get in Touch
               </h2>
-              <p className="text-neutral-600 text-base md:text-lg leading-relaxed text-left">
+              <p className="text-neutral-600 text-sm sm:text-base md:text-lg lg:text-xl xl:text-[20px] font-normal text-left tracking-[0%] align-middle" style={{ fontFamily: 'Inter', lineHeight: '32.3px' }}>
                 Let's talk about how automotive digital solutions can work for your business.
               </p>
             </div>
@@ -127,8 +127,8 @@ const ContactForm = () => {
                   </svg>
                 </div>
                 <div className="text-left">
-                  <h3 className="font-medium text-neutral-500 text-xs md:text-sm mb-1">Our Address</h3>
-                  <p className="text-primary font-medium text-sm md:text-base">
+                  <h3 className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-[16px] font-normal text-neutral-500 mb-1 tracking-[0%] align-middle capitalize" style={{ fontFamily: 'Inter', lineHeight: '30px' }}>Our Address</h3>
+                  <p className="text-primary text-sm sm:text-base md:text-lg lg:text-xl xl:text-[21px] font-bold tracking-[0%] align-middle" style={{ fontFamily: 'Inter', lineHeight: '32px' }}>
                     2603 HOLLINSWORTH PINE LN<br />
                     KATY, TX 77494, USA
                   </p>
@@ -144,8 +144,8 @@ const ContactForm = () => {
                   </svg>
                 </div>
                 <div className="text-left">
-                  <h3 className="font-medium text-neutral-500 text-xs md:text-sm mb-1">Email</h3>
-                  <p className="text-primary font-medium text-sm md:text-base">
+                  <h3 className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-[16px] font-normal text-neutral-500 mb-1 tracking-[0%] align-middle capitalize" style={{ fontFamily: 'Inter', lineHeight: '30px' }}>Email</h3>
+                  <p className="text-primary text-sm sm:text-base md:text-lg lg:text-xl xl:text-[21px] font-bold tracking-[0%] align-middle" style={{ fontFamily: 'Inter', lineHeight: '32px' }}>
                     contact@plexilis.com
                   </p>
                 </div>
@@ -159,8 +159,8 @@ const ContactForm = () => {
                   </svg>
                 </div>
                 <div className="text-left">
-                  <h3 className="font-medium text-neutral-500 text-xs md:text-sm mb-1">Contact</h3>
-                  <p className="text-primary font-medium text-sm md:text-base">
+                  <h3 className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-[16px] font-normal text-neutral-500 mb-1 tracking-[0%] align-middle capitalize" style={{ fontFamily: 'Inter', lineHeight: '30px' }}>Contact</h3>
+                  <p className="text-primary text-sm sm:text-base md:text-lg lg:text-xl xl:text-[21px] font-bold tracking-[0%] align-middle" style={{ fontFamily: 'Inter', lineHeight: '32px' }}>
                     +1 (404) 800-5522
                   </p>
                 </div>

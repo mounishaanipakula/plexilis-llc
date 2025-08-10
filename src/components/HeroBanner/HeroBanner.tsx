@@ -111,15 +111,15 @@ const HeroBanner = () => {
   const currentItem = bannerItems[currentIndex];
 
   return (
-    <section className="relative h-[550px] md:h-[650px] overflow-hidden">
-      <div className="mx-auto h-full bg-primary relative">
+    <section className="relative h-[500px] sm:h-[600px] md:h-[650px] lg:h-[700px] xl:h-[705px] overflow-hidden pt-20">
+      <div className="mx-auto h-full bg-primary relative max-w-full">
         <div className="flex flex-col md:flex-row h-full relative">
           
           {/* Left Half - Content Area */}
-          <div className="w-full md:w-4/9 flex flex-col text-white py-16 md:py-8 relative z-20 pl-14 pr-6 md:pl-22 md:pr-8 lg:pl-32 lg:pr-12">
+          <div className="w-full md:w-4/9 flex flex-col text-white py-8 sm:py-12 relative z-20 pl-6 pr-4 sm:pl-8 sm:pr-6 md:pl-12 md:pr-8 lg:pl-20 lg:pr-12 xl:pl-32 xl:pr-16">
             {/* Top Content Area - Variable Height */}
             <div className="flex-1 flex flex-col justify-center min-h-0">
-              <div className="space-y-6">
+              <div className="space-y-4 sm:space-y-6 md:space-y-8">
                 <AnimatePresence mode="wait">
                   <motion.h1 
                     key={`title-${currentItem.id}`}
@@ -127,7 +127,7 @@ const HeroBanner = () => {
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: -30, opacity: 0 }}
                     transition={{ duration: 0.6, ease: "easeInOut" }}
-                    className="text-4xl md:text-5xl lg:text-6xl xl:text-[65px] font-semibold leading-none text-left"
+                    className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[65px] font-semibold leading-tight sm:leading-none text-left"
                   >
                     {currentItem.title}
                   </motion.h1>
@@ -140,7 +140,7 @@ const HeroBanner = () => {
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: -30, opacity: 0 }}
                     transition={{ duration: 0.6, delay: 0.1, ease: "easeInOut" }}
-                    className="text-lg md:text-xl lg:text-2xl xl:text-[24px] font-normal text-white/90 max-w-lg leading-[1.6] text-left"
+                    className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-[24px] font-normal text-white/90 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl leading-relaxed text-left"
                   >
                     {currentItem.description}
                   </motion.p>
@@ -149,16 +149,16 @@ const HeroBanner = () => {
             </div>
 
             {/* Fixed Bottom Section */}
-            <div className="mt-auto space-y-6 flex-shrink-0">
+            <div className="mt-auto space-y-3 sm:space-y-4 md:space-y-5 flex-shrink-0">
               {/* Learn More Button - Responsive */}
               <div className="flex justify-start">
                 <a
                   href={currentItem.ctaLink}
-                  className="bg-secondary text-white font-normal transition-colors duration-300 inline-flex items-center rounded-full w-48 h-14 md:w-56 md:h-16 lg:w-60 lg:h-[70px] xl:w-[250px] xl:h-[73px] pl-4 md:pl-6 relative"
+                  className="bg-secondary text-white font-normal transition-colors duration-300 inline-flex items-center rounded-full w-32 h-10 sm:w-36 sm:h-12 md:w-40 md:h-12 lg:w-44 lg:h-14 xl:w-48 xl:h-[56px] 2xl:w-[200px] 2xl:h-[58px] pl-3 sm:pl-4 md:pl-4 lg:pl-5 relative"
                 >
-                  <span className="text-base md:text-lg lg:text-xl xl:text-[18.72px] font-bold leading-[72.38px] tracking-[-0.19px] capitalize">Learn More</span>
-                  <div className="absolute right-0 w-12 h-12 md:w-16 md:h-16 lg:w-[70px] lg:h-[70px] xl:w-[72px] xl:h-[72px] bg-white/20 rounded-full flex items-center justify-center">
-                    <svg className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <span className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-[18.72px] font-bold leading-normal tracking-tight capitalize">Learn More</span>
+                  <div className="absolute right-0 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-[56px] xl:h-[56px] 2xl:w-[58px] 2xl:h-[58px] bg-white/20 rounded-full flex items-center justify-center">
+                    <svg className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </div>
@@ -166,21 +166,20 @@ const HeroBanner = () => {
               </div>
 
               {/* Section Tabs Navigation - Horizontal Scroll */}
-              <div className="overflow-hidden py-6">
+              <div className="overflow-hidden py-4 sm:py-6">
                 <div 
                   ref={navRef} 
-                  className="flex gap-4 md:gap-6 items-center overflow-x-auto pb-2" 
+                  className="flex gap-3 sm:gap-4 md:gap-6 lg:gap-8 items-center overflow-x-auto pb-2" 
                   style={{
                     scrollbarWidth: 'none', 
-                    msOverflowStyle: 'none',
-                    WebkitScrollbar: { display: 'none' }
-                  }}
+                    msOverflowStyle: 'none'
+                  } as React.CSSProperties}
                 >
                   {bannerItems.map((item, index) => (
                     <button
                       key={item.id}
                       onClick={() => setCurrentIndex(index)}
-                      className={`text-sm md:text-base lg:text-[14px] font-normal leading-[100%] tracking-[0%] transition-all duration-300 whitespace-nowrap flex-shrink-0 ${
+                      className={`text-xs sm:text-sm md:text-base lg:text-lg xl:text-[14px] font-normal leading-tight tracking-normal transition-all duration-300 whitespace-nowrap flex-shrink-0 ${
                         index === currentIndex 
                           ? 'text-secondary' 
                           : 'text-white/60 hover:text-white/80'

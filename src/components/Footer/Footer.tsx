@@ -68,11 +68,11 @@ const Footer = () => {
       </div>
 
       {/* Main Footer Content */}
-      <div className="bg-primary py-4 md:py-6 border-t border-neutral-700">
+      <div className="bg-primary border-t border-neutral-700">
         <div className="px-4 md:px-8 lg:px-12 xl:px-16 mx-auto max-w-7xl">
           <div className="flex flex-col lg:flex-row gap-6 md:gap-8">
             {/* Left Side: Navigation Links */}
-            <div className="flex-1">
+            <div className="flex-1 py-4 md:py-6">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {/* Our Company */}
             <div>
@@ -188,7 +188,7 @@ const Footer = () => {
             </div>
 
             {/* Right Side: Company Info - Plexilis Section */}
-            <div className="bg-neutral-100 p-4 md:p-6 rounded-lg flex-shrink-0 w-full lg:w-80 xl:w-96">
+            <div className="bg-neutral-100 p-4 md:p-6 flex-shrink-0 w-full lg:w-80 xl:w-96">
               <div className="flex flex-col h-full">
                 <div className="mb-4 text-left">
                   <div className="mb-3 text-left">
@@ -233,7 +233,7 @@ const Footer = () => {
       <div className="bg-secondary py-3 md:py-4">
         <div className="px-4 mx-auto">
           <p className="text-center text-white text-xs md:text-sm">
-            Copyright © 2025 <span className="font-semibold">Plexilis LLC</span>. All rights reserved.
+            Copyright © 2025 <span className="font-semibold text-primary">Plexilis LLC.</span> All rights reserved.
           </p>
         </div>
       </div>

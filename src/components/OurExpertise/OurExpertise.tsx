@@ -4,18 +4,29 @@ const OurExpertise = () => {
       <div className="px-6 md:px-12 lg:px-16 xl:px-20 mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-[36px] font-bold leading-[180%] tracking-[0%] text-center text-primary mb-4">
+          <h2 className="text-[24px] md:text-3xl lg:text-4xl xl:text-[36px] font-bold leading-[180%] tracking-[0%] text-center text-primary mb-4" style={{ fontFamily: 'Inter', fontWeight: 700 }}>
             Our <span className="text-secondary">Expertise</span>
           </h2>
           <div className="w-48 h-0.5 bg-secondary mx-auto mb-8"></div>
-          <p className="text-neutral-600 text-lg md:text-xl lg:text-2xl xl:text-[24px] font-normal leading-[180%] tracking-[0%] text-center max-w-4xl mx-auto">
+          <p className="text-neutral-600 text-[14px] md:text-xl lg:text-2xl xl:text-[24px] font-normal leading-[180%] tracking-[0%] text-center max-w-4xl mx-auto" style={{ fontFamily: 'Inter', fontWeight: 400 }}>
             With our deep expertise and experienced Team, we have created Road Maps, Build Solutions and Delivered Value 
             across Organizations. Here is the list of tools we have acquired and equipped with...
           </p>
         </div>
 
-        {/* Technology Logos Grid */}
-        <div className="max-w-5xl mx-auto">
+        {/* Mobile Layout - Single Image */}
+        <div className="block md:hidden">
+          <div className="w-full max-w-sm mx-auto">
+            <img 
+              src="/assets/images/expertise_mobile.png" 
+              alt="Our Technology Expertise"
+              className="w-full h-auto object-contain"
+            />
+          </div>
+        </div>
+
+        {/* Desktop Layout - Technology Logos Grid */}
+        <div className="hidden md:block max-w-5xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 items-center justify-items-center">
           {/* Row 1 */}
           <div className="flex items-center justify-center h-16 md:h-20 w-28 md:w-32">

@@ -111,9 +111,109 @@ const HeroBanner = () => {
   const currentItem = bannerItems[currentIndex];
 
   return (
-    <section className="relative h-[500px] sm:h-[600px] md:h-[650px] lg:h-[700px] xl:h-[705px] overflow-hidden pt-20">
-      <div className="mx-auto h-full bg-primary relative max-w-full">
-        <div className="flex flex-col md:flex-row h-full relative">
+    <section className="relative overflow-hidden pt-[70px] sm:pt-20">
+      <div className="mx-auto h-[620px] md:h-[650px] lg:h-[700px] xl:h-[705px] bg-primary relative max-w-full">
+        
+        {/* Mobile Layout - Vertical Stack */}
+        <div className="flex flex-col h-full relative md:hidden text-white">
+          {/* Mobile Image at Top - Full Width & Height of Top Half */}
+          <div className="h-1/2 w-full relative">
+            <AnimatePresence mode="wait">
+              <motion.img
+                key={`mobile-image-${currentItem.id}`}
+                src={currentItem.image}
+                alt={currentItem.title}
+                initial={{ opacity: 0, scale: 1.1 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{ duration: 0.6, ease: "easeInOut" }}
+                className="w-full h-full object-cover"
+              />
+            </AnimatePresence>
+          </div>
+
+          {/* Mobile Content - Bottom Half */}
+          <div className="h-1/2 flex flex-col px-6 py-4">
+            {/* Content Area */}
+            <div className="flex-1 flex flex-col justify-start pt-4 space-y-4">
+              {/* Mobile Title - Left Aligned */}
+              <AnimatePresence mode="wait">
+                <motion.h1 
+                  key={`mobile-title-${currentItem.id}`}
+                  initial={{ y: 30, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  exit={{ y: -30, opacity: 0 }}
+                  transition={{ duration: 0.6, ease: "easeInOut" }}
+                  className="text-[24px] xs:text-[28px] sm:text-[32px] md:text-[36px] font-semibold leading-[100%] tracking-[0%] text-left"
+                  style={{ fontFamily: 'Inter' }}
+                >
+                  {currentItem.title}
+                </motion.h1>
+              </AnimatePresence>
+              
+              {/* Mobile Description - Left Aligned */}
+              <AnimatePresence mode="wait">
+                <motion.p 
+                  key={`mobile-description-${currentItem.id}`}
+                  initial={{ y: 30, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  exit={{ y: -30, opacity: 0 }}
+                  transition={{ duration: 0.6, delay: 0.1, ease: "easeInOut" }}
+                  className="text-[14px] font-normal text-white/90 leading-[160%] tracking-[0%] text-left"
+                  style={{ fontFamily: 'Inter' }}
+                >
+                  {currentItem.description}
+                </motion.p>
+              </AnimatePresence>
+
+              {/* Mobile Learn More Button - Left Aligned */}
+              <div className="flex justify-start mt-4">
+                <a
+                  href={currentItem.ctaLink}
+                  className="bg-secondary text-white font-normal transition-colors duration-300 inline-flex items-center rounded-full w-32 h-10 pl-3 relative"
+                >
+                  <span className="text-xs font-bold leading-normal tracking-tight capitalize">Learn More</span>
+                  <div className="absolute right-0 w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            {/* Mobile Navigation Tabs - Fixed at Bottom */}
+            <div className="flex-shrink-0 mt-auto">
+              <div className="overflow-hidden py-2">
+                <div 
+                  ref={navRef} 
+                  className="flex gap-4 items-center overflow-x-auto pb-2 px-2" 
+                  style={{
+                    scrollbarWidth: 'none', 
+                    msOverflowStyle: 'none'
+                  } as React.CSSProperties}
+                >
+                  {bannerItems.map((item, index) => (
+                    <button
+                      key={item.id}
+                      onClick={() => setCurrentIndex(index)}
+                      className={`text-xs font-normal leading-tight tracking-normal transition-all duration-300 whitespace-nowrap flex-shrink-0 ${
+                        index === currentIndex 
+                          ? 'text-secondary' 
+                          : 'text-white/60 hover:text-white/80'
+                      }`}
+                    >
+                      {item.title}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop Layout - Side by Side (Hidden on Mobile) */}
+        <div className="hidden md:flex flex-row h-full relative">
           
           {/* Left Half - Content Area */}
           <div className="w-full md:w-4/9 flex flex-col text-white py-8 sm:py-12 relative z-20 pl-6 pr-4 sm:pl-8 sm:pr-6 md:pl-12 md:pr-8 lg:pl-20 lg:pr-12 xl:pl-32 xl:pr-16">
@@ -221,6 +321,7 @@ const HeroBanner = () => {
             </div>
           </div>
         </div>
+        
       </div>
     </section>
   );

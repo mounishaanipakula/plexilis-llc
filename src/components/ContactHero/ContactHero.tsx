@@ -1,6 +1,6 @@
 const ContactHero = () => {
   return (
-      <div className="relative pt-20">
+      <div className="relative pt-[70px] sm:pt-20">
         <img 
           src="/assets/images/contact-us.png" 
           alt="Contact Us - Professional Business Communication"

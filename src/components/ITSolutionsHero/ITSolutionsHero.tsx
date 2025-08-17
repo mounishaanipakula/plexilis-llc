@@ -1,6 +1,6 @@
 const ITSolutionsHero = () => {
   return (
-      <div className="relative pt-20">
+      <div className="relative pt-[70px] sm:pt-20">
         <img 
           src="/assets/images/it-solutions.png" 
           alt="IT Solutions - Technology Innovation"

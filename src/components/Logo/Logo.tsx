@@ -4,7 +4,7 @@ const Logo = () => {
       <img 
         src="/assets/images/plexilis_logo.svg" 
         alt="Plexilis Logo"
-        className="h-full max-h-12 w-auto object-contain"
+        className="w-[125.70px] h-[27.72px] sm:h-full sm:max-h-12 sm:w-auto object-contain"
       />
     </div>
   );

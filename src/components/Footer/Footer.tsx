@@ -5,11 +5,11 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-white">
       {/* Contact Information Section */}
-      <div className="bg-primary py-3 md:py-4">
-        <div className="px-4 md:px-8 lg:px-12 xl:px-16 mx-auto max-w-7xl">
-          <div className="flex flex-col md:flex-row items-stretch justify-center md:justify-between gap-4 md:gap-8 text-center md:text-left min-h-[120px]">
+      <div className="bg-primary py-8 md:py-4">
+        <div className="px-4 py-4md:px-8 lg:px-12 xl:px-16 mx-auto max-w-7xl">
+          <div className="flex flex-col md:flex-row items-stretch justify-center md:justify-between gap-6 md:gap-8 text-left min-h-[120px]">
             {/* Address */}
-            <div className="flex flex-col md:flex-row items-center md:items-center gap-2 md:gap-3">
+            <div className="flex flex-row items-center gap-3">
               <div className="w-12 h-12 md:w-16 md:h-16 lg:w-[70px] lg:h-[70px] rounded-full md:rounded-[30px] lg:rounded-[35px] border border-neutral-300 flex items-center justify-center flex-shrink-0">
                 <img 
                   src="/assets/icons/address_icon.png" 
@@ -17,10 +17,9 @@ const Footer = () => {
                   className="w-4 h-4 md:w-5 md:h-5 lg:w-[25px] lg:h-[25px]"
                 />
               </div>
-              <div className="text-center md:text-left">
-                <p className="text-secondary text-sm md:text-base lg:text-[15px] font-normal leading-[32px] tracking-[0%] mb-1">Address:</p>
-                <p className="text-white text-lg md:text-xl lg:text-[20px] font-bold leading-[32px] tracking-[0%]">2603 HOLLINSWORTH PINE LN</p>
-                <p className="text-white text-lg md:text-xl lg:text-[20px] font-bold leading-[32px] tracking-[0%]">KATY, TX 77494, USA</p>
+              <div className="text-left">
+                <p className="text-secondary text-[15px] md:text-base lg:text-[15px] font-normal leading-[32px] tracking-[0%] mb-1" style={{ fontFamily: 'Inter', fontWeight: 400 }}>Address:</p>
+                <p className="text-white text-[20px] md:text-xl lg:text-[20px] font-bold leading-[32px] tracking-[0%]" style={{ fontFamily: 'Inter', fontWeight: 700 }}>2603 HOLLINSWORTH PINE LN, KATY, TX 77494, USA</p>
               </div>
             </div>
 
@@ -28,7 +27,7 @@ const Footer = () => {
             <div className="hidden md:block w-px bg-neutral-600 self-stretch"></div>
 
             {/* Phone */}
-            <div className="flex flex-col md:flex-row items-center md:items-center gap-2 md:gap-3">
+            <div className="flex flex-row items-center gap-3">
               <div className="w-12 h-12 md:w-16 md:h-16 lg:w-[70px] lg:h-[70px] rounded-full md:rounded-[30px] lg:rounded-[35px] border border-neutral-300 flex items-center justify-center flex-shrink-0">
                 <img 
                   src="/assets/icons/phone_icon.png" 
@@ -36,8 +35,8 @@ const Footer = () => {
                   className="w-4 h-4 md:w-5 md:h-5 lg:w-[25px] lg:h-[25px]"
                 />
               </div>
-              <div className="text-center md:text-left">
-                <p className="text-secondary text-sm md:text-base lg:text-[15px] font-normal leading-[32px] tracking-[0%] mb-1">Phone:</p>
+              <div className="text-left">
+                <p className="text-secondary text-[15px] md:text-base lg:text-[15px] font-normal leading-[32px] tracking-[0%] mb-1" style={{ fontFamily: 'Inter', fontWeight: 400 }}>Phone:</p>
                 <a href="tel:+14048005522" className="text-white text-lg md:text-xl lg:text-[20px] font-bold leading-[32px] tracking-[0%] hover:text-secondary transition-colors">
                   +1 (404) 800-5522
                 </a>
@@ -48,7 +47,7 @@ const Footer = () => {
             <div className="hidden md:block w-px bg-neutral-600 self-stretch"></div>
 
             {/* Email */}
-            <div className="flex flex-col md:flex-row items-center md:items-center gap-2 md:gap-3">
+            <div className="flex flex-row items-center gap-3">
               <div className="w-12 h-12 md:w-16 md:h-16 lg:w-[70px] lg:h-[70px] rounded-full md:rounded-[30px] lg:rounded-[35px] border border-neutral-300 flex items-center justify-center flex-shrink-0">
                 <img 
                   src="/assets/icons/email_icon.png" 
@@ -56,8 +55,8 @@ const Footer = () => {
                   className="w-4 h-4 md:w-5 md:h-5 lg:w-[25px] lg:h-[25px]"
                 />
               </div>
-              <div className="text-center md:text-left">
-                <p className="text-secondary text-sm md:text-base lg:text-[15px] font-normal leading-[32px] tracking-[0%] mb-1">Email:</p>
+              <div className="text-left">
+                <p className="text-secondary text-[15px] md:text-base lg:text-[15px] font-normal leading-[32px] tracking-[0%] mb-1" style={{ fontFamily: 'Inter', fontWeight: 400 }}>Email:</p>
                 <a href="mailto:contact@plexilis.com" className="text-white text-lg md:text-xl lg:text-[20px] font-bold leading-[32px] tracking-[0%] hover:text-secondary transition-colors">
                   contact@plexilis.com
                 </a>
@@ -188,13 +187,15 @@ const Footer = () => {
             </div>
 
             {/* Right Side: Company Info - Plexilis Section */}
-            <div className="bg-neutral-100 p-4 md:p-6 flex-shrink-0 w-full lg:w-80 xl:w-96">
+            <div className="p-4 md:p-6 flex-shrink-0 w-full lg:w-80 xl:w-96" style={{ backgroundColor: '#D9D9D9' }}>
               <div className="flex flex-col h-full">
                 <div className="mb-4 text-left">
                   <div className="mb-3 text-left">
-                    <Logo />
+                    <div className="w-[223.19px] h-[49.23px] opacity-100" style={{ transform: 'rotate(0deg)' }}>
+                      <Logo />
+                    </div>
                   </div>
-                  <p className="text-neutral-600 text-xs leading-relaxed text-left">
+                  <p className="text-neutral-600 text-[14px] leading-[24px] tracking-[0%] text-left capitalize" style={{ fontFamily: 'Inter', fontWeight: 400 }}>
                     At Plexilis LLC We Are Committed To Leading And Implementing Digital Transformation And Enterprise 4.0 Capabilities To Drive Impactful Global Growth For Our Clients. Our Offerings Include SAP, Cloud, Data, AI/ML, Software Testing, Contingent Workforce, Executive Search, And RPO Solutions. We Have Our Headquarters In 2603 HOLLINSWORTH PINE LN., KATY, TX 77494, USA.
                   </p>
                 </div>
@@ -205,21 +206,21 @@ const Footer = () => {
                     <img 
                       src="/assets/icons/facebook.png" 
                       alt="Facebook"
-                      className="w-4 h-4"
+                      className="w-8 h-8"
                     />
                   </a>
                   <a href="#" className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors shadow-sm">
                     <img 
                       src="/assets/icons/instagram.png" 
                       alt="Instagram"
-                      className="w-4 h-4"
+                      className="w-8 h-8"
                     />
                   </a>
                   <a href="#" className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors shadow-sm">
                     <img 
                       src="/assets/icons/x.png" 
                       alt="X (formerly Twitter)"
-                      className="w-4 h-4"
+                      className="w-8 h-8"
                     />
                   </a>
                 </div>
@@ -229,12 +230,28 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* Spacing between sections */}
+      <div className="bg-primary h-10 md:h-6"></div>
+
       {/* Copyright Section */}
       <div className="bg-secondary py-3 md:py-4">
         <div className="px-4 mx-auto">
-          <p className="text-center text-white text-xs md:text-sm">
-            Copyright © 2025 <span className="font-semibold text-primary">Plexilis LLC.</span> All rights reserved.
-          </p>
+          {/* Mobile Layout - Two Lines */}
+          <div className="block md:hidden text-center text-white text-[14px] leading-[20px] tracking-[0%]" style={{ fontFamily: 'Inter', fontWeight: 400 }}>
+            <p className="text-center">
+              Copyright © 2025 <span className="font-semibold text-primary">Plexilis LLC.</span>
+            </p>
+            <p className="text-center">
+              All rights reserved.
+            </p>
+          </div>
+          
+          {/* Desktop Layout - Single Line */}
+          <div className="hidden md:block">
+            <p className="text-center text-white text-xs md:text-sm">
+              Copyright © 2025 <span className="font-semibold text-primary">Plexilis LLC.</span> All rights reserved.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
